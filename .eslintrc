@@ -18,7 +18,8 @@
       "eol-last":"off",
       "arrow-parens":"off",
       "comma-dangle":"off",
-      "prettier/prettier": ["error"]
+      "prettier/prettier": ["error"],
+      "new-cap": "off"
       
   }
 }

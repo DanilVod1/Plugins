@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  background-color: gray;
+}
+
+.app {
+  display: flex;
+  width: 80%;
+  height: 90vm;
+  margin: 0 auto;
+  align-items: flex-end;
+}
+.contents {
+  width: 20%;
+  background-color: aliceblue;
+}
+.navigation {
+  display: flex;
+  height: 30px;
+  z-index: 1;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  button {
+    margin-left: 20px;
+    width: 20vw;
+  }
+}

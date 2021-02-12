@@ -1,9 +1,16 @@
 import './src/scss/style.scss';
-
+// сократить код в индекс и сделать его для импортов
 class Component {
   constructor() {
-    this.plugins = ['expandingCards', 'progressSteps'];
+    this.plugins = [
+      'expandingCards',
+      'transparentLoginFrom',
+      'tab',
+      'videoBackground',
+      'passwordGenerator',
+    ];
     this.currentPluginId = localStorage.getItem('pluginId') || 0;
+    this.app = document.querySelector('.app');
   }
 
   render() {
@@ -66,6 +73,7 @@ class Navigation extends Component {
     });
   }
   choosePlugin(step) {
+    this.app.innerHTML = '';
     const border = step === 'nextPlugin' ? this.plugins.length - 1 : 0;
     const increment = step === 'nextPlugin' ? 1 : -1;
     if (this.currentPluginId > border || this.currentPluginId < border) {

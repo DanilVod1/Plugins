@@ -1,6 +1,5 @@
 function expandingCards() {
   const app = document.querySelector('.app');
-  app.innerHTML = '';
   const htmlPattern = `<div class='container'>
     ${createPanel(4)}
   </div>`;

@@ -45,4 +45,10 @@
   margin-top: 20px;
   margin-left: 30px;
   list-style: none;
+  .pluginName:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: underline;
+    font-weight: bold;
+  }
 }

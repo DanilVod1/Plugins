@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+.container {
+  width: 100%;
+  background: #272727;
+  color: #fff;
+  position: relative;
+}
+
+.header {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Rubik';
+  font-weight: 700;
+  font-size: 3em;
+  border-bottom: 3px solid #fff;
+  background: #8351c5;
+}
+
+.tabs {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Nunito';
+  font-weight: 800;
+  font-size: 2em;
+  justify-content: center;
+  padding-top: 10px;
+  background: #8351c5;
+  align-items: center;
+}
+.box:nth-last-child(1) {
+  border: none;
+}
+.box {
+  border-right: 3px solid #fff;
+  height: 80%;
+  padding: 0 20px 5px;
+  margin-bottom: 5px;
+}
+.tab:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.tab.active:hover {
+  transform: none;
+}
+.tab {
+  padding: 0 20px 5px;
+}
+
+.tab.active {
+  border-bottom: 3px solid #fff;
+  transition: 0;
+}
+.content {
+  display: flex;
+  overflow: scroll;
+}
+img {
+  width: 200px;
+  height: 200px;
+  flex: 1;
+  margin: 20px;
+}

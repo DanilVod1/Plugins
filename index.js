@@ -8,6 +8,7 @@ class Component {
       'tab',
       'videoBackground',
       'passwordGenerator',
+      'eyeTracking',
     ];
     this.currentPluginId = localStorage.getItem('pluginId') || 0;
     this.app = document.querySelector('.app');
@@ -73,10 +74,10 @@ class Navigation extends Component {
     });
   }
   choosePlugin(step) {
-    this.app.innerHTML = '';
     const border = step === 'nextPlugin' ? this.plugins.length - 1 : 0;
     const increment = step === 'nextPlugin' ? 1 : -1;
     if (this.currentPluginId > border || this.currentPluginId < border) {
+      this.app.innerHTML = '';
       this.currentPluginId = +this.currentPluginId + increment;
       this.toLocalStorage(+this.currentPluginId);
       super.render();
